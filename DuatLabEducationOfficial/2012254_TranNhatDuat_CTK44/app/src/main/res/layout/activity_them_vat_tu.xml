@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditVatTu"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgVatTuAdd"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="@string/content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/tenVatTuAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_vatTu"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/giaVatTuAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/price_VatTu"
+        android:textSize="18sp"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+         />
+
+    <EditText
+        android:id="@+id/donViTinhAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnThemMoiAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_Add"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+</LinearLayout>

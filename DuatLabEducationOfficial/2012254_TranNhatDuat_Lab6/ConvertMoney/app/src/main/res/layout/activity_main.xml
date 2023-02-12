@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtNumber"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/textbox_hint"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spnUnit"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf,UselessParent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/usd_name"
+                    android:src="@drawable/usd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/usd_unit"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/lblUsd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/eur_name"
+                    android:src="@drawable/eur" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/eur_unit"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/lblEur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/gbp_name"
+                    android:src="@drawable/gbp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/eur_unit"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/lblGbp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/inr_name"
+                    android:src="@drawable/inr" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/inr_unit"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/lblInr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/aud_name"
+                    android:src="@drawable/aud" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/aud_unit"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/lblAud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/cad_name"
+                    android:src="@drawable/cad" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/cad_unit"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/lblCad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/zar_name"
+                    android:src="@drawable/zar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/zar_unit"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/lblZar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/nzd_name"
+                    android:src="@drawable/nzd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/nzd_unit"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/lblNzd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/jpy_name"
+                    android:src="@drawable/jav" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/jpy_unit"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/lblJpy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:padding="10dp"
+                tools:ignore="UselessLeaf">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/vnd_name"
+                    android:src="@drawable/vnd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:text="@string/vnd_unit"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/lblVnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:textSize="18sp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">App Multi Language</string>
+    <string name="title_app">Welcome!</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="txt_notification">Don\'t have account ? Sign Up</string>
+    <string name="btn_vn">Tiếng Việt </string>
+    <string name="btn_us">English</string>
+    <string name="btn_fr">French</string>
+
+</resources>

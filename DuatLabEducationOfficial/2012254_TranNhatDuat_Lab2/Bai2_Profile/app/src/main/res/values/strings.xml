@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="txt_name">Duat Tran</string>
+    <string name="txt_phone1">0966668888</string>
+    <string name="txt_title_phone">Mobile</string>
+    <string name="txt_phone2">0988889999</string>
+    <string name="txt_email">duatsen36@gmail.com</string>
+    <string name="title_email">Email</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtX"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:gravity="center"
+        android:inputType="text"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/txtY"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:gravity="center"
+        android:inputType="text"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/txtResult" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/resultPlus"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/resultSub"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mul"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/div"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btnAnd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/chiadu"
+            tools:ignore="NestedWeights" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

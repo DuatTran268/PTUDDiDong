@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tool_barDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                app:titleTextColor="@color/white"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".DetailsActivity">
+
+                <ImageView
+                    android:id="@+id/imgCoverDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="275dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo" />
+
+                <ImageView
+                    android:id="@+id/imgCoverBgGradientDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintBottom_toBottomOf="@id/imgCoverDetails"
+                    app:layout_constraintEnd_toEndOf="@+id/imgCoverDetails"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/imgCoverDetails"
+                    app:srcCompat="@drawable/gradient_bg" />
+
+                <ImageView
+                    android:id="@+id/imgThumbDetails"
+                    android:layout_width="125dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="16dp"
+                    android:scaleType="centerCrop"
+                    android:transitionName="imageMain"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imgCoverBgGradientDetails"
+                    app:layout_constraintTop_toTopOf="@id/imgCoverBgGradientDetails"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/txtTitleDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="TextView"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgThumbDetails"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCoverDetails" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnActionPlayDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgCoverDetails"
+                    app:layout_constraintEnd_toEndOf="@+id/imgCoverDetails"
+                    app:layout_constraintStart_toStartOf="@+id/imgCoverDetails"
+                    app:layout_constraintTop_toTopOf="@+id/imgCoverDetails"
+                    app:srcCompat="@drawable/ic_play" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginTop="16dp"
+                android:background="@color/color_bg_blue"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:textSize="24sp"
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Episodes" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewPast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_descDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Movie Description"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:lineSpacingExtra="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/color_text_blue"
+                />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/color_bg_blue"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="Casts"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                />
+
+        </LinearLayout>
+        
+    </ScrollView>
+
+        
+
+
+
+</LinearLayout>
+
+

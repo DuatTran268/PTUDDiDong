@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Multi Language</string>
+    <string name="title_app">Accueil</string>
+    <string name="txt_email">Address e-mail</string>
+    <string name="txt_password">Mot de passe</string>
+    <string name="btn_login">Connexion</string>
+    <string name="txt_notification">Ne pas avoir un compte? signer</string>
+    <string name="btn_vn">Tiếng Việt</string>
+    <string name="btn_us">English</string>
+    <string name="btn_fr">French</string>
+</resources>

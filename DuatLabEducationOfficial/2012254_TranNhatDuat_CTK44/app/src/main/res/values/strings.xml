@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Trần Nhật Duật (2012254) - Đề số 2</string>
+    <string name="cap_mang">Cáp mạng</string>
+    <string name="dau_noi">Đầu nối RJ45</string>
+    <string name="giay_in">Giấy in A4</string>
+    <string name="gia_cap">6.000đ</string>
+    <string name="gia_dau_noi">5.000đ</string>
+    <string name="gia_giaya4">80.000đ</string>
+    <string name="dvt_cap"> met</string>
+    <string name="dvt_dauNoi"> cái</string>
+    <string name="dvt_giayA4"> ram</string>
+    <string name="content">Error Image</string>
+    <string name="back_slash"> / </string>
+    <string name="name_vatTu">Tên vật tư</string>
+    <string name="price_VatTu">Đơn giá</string>
+    <string name="type">Đơn vị tính</string>
+    <string name="btn_Edit">Sửa thông tin</string>
+    <string name="btn_Delete">Xoá thông tin</string>
+    <string name="btn_Add">Thêm mới</string>
+
+
+
+</resources>
