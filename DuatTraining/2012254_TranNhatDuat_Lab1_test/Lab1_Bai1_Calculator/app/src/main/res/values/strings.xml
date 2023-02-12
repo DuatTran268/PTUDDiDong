@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="txtResult">Result</string>
+    <string name="resultPlus">+</string>
+    <string name="resultSub">-</string>
+    <string name="mul">*</string>
+    <string name="div">/</string>
+    <string name="chiadu">&#38;</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">App movie</string>
+    <string name="text_title">Title movie</string>
+    <string name="best_text">Best Popular Films and Movies</string>
+    <string name="simple_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare leo tellus, nec mattis augue pretium ut. Mauris at faucibus dui. Phasellus pharetra augue a molestie fermentum. Nulla lacinia interdum dapibus. Nullam at leo sollicitudin, finibus orci id, tempus magna. Etiam a pretium nulla, tincidunt tincidunt turpis. Aenean gravida ac velit a lacinia.</string>
+    <string name="content_desc">ContentDescription</string>
+
+</resources>
